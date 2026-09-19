@@ -1,0 +1,17 @@
+# Sensitive / generated files
+.env
+.env.*
+
+# Workspace artifacts (large binaries, not worth tracking)
+workspace/
+
+# Source archives
+*.7z
+
+# macOS
+.DS_Store
+
+# Editor
+*.swp
+*.swo
+*~
