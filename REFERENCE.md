@@ -26,3 +26,15 @@
 ### Pipeline Timings
 - Total time: ~10 minutes (including brew install + mod.io auth flow)
 - Archive: 8.2 KB compressed → 143 KB uncompressed → 8.6 KB re-zipped
+
+## 2026-09-20: Update to 2.0-Compatible Mod
+
+### What We Did
+- Identified old 1.7 mod was a full replacement of `ArtifactPrototypes.cfg` (147KB), likely causing crashes in v2.0.
+- Downloaded new 2.0-compatible mod from GitHub (`r-skrylnyk/stalker2-mods`).
+- Re-packaged as `WeirdWater_Undrunked_P.pak` (710 bytes) - much safer as it likely uses UE config merging.
+- Uploaded as v2.0.0-test to existing Mod.io mod ID 6393766.
+
+### mod.io Results
+- **New File ID**: 8234630
+- **Version**: 2.0.0-test
