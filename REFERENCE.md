@@ -38,3 +38,14 @@
 ### mod.io Results
 - **New File ID**: 8234630
 - **Version**: 2.0.0-test
+
+## 2026-10-16: Console Approval Investigation & Author Credit Update
+
+### Findings
+- Investigated why Xbox Series X status is still "Pending approval" (status: 0 on File 8234630).
+- Confirmed GSC Game World manually vets all console mod submissions in periodic batches.
+- Identified potential curation delays: lack of screenshots, review backlog, and missing author permission note.
+
+### Actions Taken
+- Updated mod.io description via REST API to include explicit Author Permissions & Credits citing `r-skrylnyk` and `TheSilverFoxe` (Nexus #382) to satisfy moderation and copyright guidelines.
+
