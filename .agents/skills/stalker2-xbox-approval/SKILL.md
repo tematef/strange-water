@@ -63,26 +63,58 @@ Follow GSC's official mod.io requirements:
 
 ## 4. Stage 2: GSC Xbox Cook Request Ticket
 
-Uploading to mod.io tags the file for Xbox but leaves it in `status: 0` (**Pending approval**). To get the mod approved and live on Xbox console, a formal request must be submitted to GSC Game World:
+Uploading to mod.io registers the file for Xbox but leaves it in `status: 0` (**Pending approval**). To have GSC's console engineering team cook and certify your mod for Xbox Series X|S, you must submit an official ticket through GSC's support portal.
 
-### Step A: Prepare the Google Drive Archive
-1. Compress your mod's packaged files into a **single `.zip` file**.
-2. Upload the `.zip` file to Google Drive.
-3. Set sharing permissions to **"Anyone with the link can view"**.
-4. **CRITICAL GSC RULE**: The Google Drive link must point directly to the **single `.zip` file**. If the link points to a folder containing sub-folders, GSC will automatically reject the submission.
+### Step A: Google Drive Archive Preparation
+1. Ensure your mod package is compressed as a **single `.zip` file** (e.g. `WeirdWater_Undrunked_Xbox.zip`).
+2. Upload the `.zip` file to your Google Drive.
+3. Right-click the file $\rightarrow$ **Share** $\rightarrow$ General access: set to **"Anyone with the link"** (Viewer).
+4. **FATAL REJECTION RULE**: The Google Drive link must point directly to the **single `.zip` file** (URL format: `https://drive.google.com/file/d/<FILE_ID>/view?usp=sharing`).
+   - ❌ **DO NOT** share a Google Drive folder containing files or sub-folders. GSC's automated intake will instantly reject folder links.
+   - 💡 **Verification**: Test the link in a browser **Private/Incognito** window to ensure anyone can download it without logging into a Google account.
 
-### Step B: Submit the Help Center Ticket
-1. Go to the [S.T.A.L.K.E.R. 2 Support Portal](https://support.stalker2.com).
-2. Click **Submit a request** (top right) $\rightarrow$ choose category **"New mod / Mod update"**.
-3. Fill in the form fields:
-   * **Email**: Creator's contact email.
-   * **Subject**: Must strictly begin with `New mod: <Exact Mod Name>` or `Update mod: <Exact Mod Name>`.
-   * **Description**: Enter the exact mod title registered on mod.io and a short summary.
-   * **URL to Google Drive with a mod**: The direct file link from Step A.
-   * **URL to mod's page on mod.io**: The full mod URL (`https://mod.io/g/stalker2/m/...`).
-4. **Required Checkbox Confirmations**:
-   * Check: *"Mod does not contain references to external assets that are not natively included within the mod."*
-   * Check: *"Files are safe, clean, and comply with GSC Fan Content Guidelines."*
+### Step B: Form Fields & Ticket Submission
+1. Direct Ticket URL: **[https://support.stalker2.com/en-US/support/tickets/create](https://support.stalker2.com/en-US/support/tickets/create)**
+2. Fill out every field exactly as required:
+
+| Form Field | Value / Format | Notes |
+| :--- | :--- | :--- |
+| **Form Type / Category** | `New mod / Mod update` | Required category for console intake |
+| **Name** | Your creator / author name | Must match your mod.io username |
+| **Email** | Your active contact email | Where GSC sends ticket updates and status |
+| **Subject** | `New mod: <Exact Mod Name>` *(or `Update mod: <Exact Mod Name>`)* | **STRICT PREFIX**: Must begin with either `New mod:` or `Update mod:` followed by the exact mod title on mod.io |
+| **Description** | Detailed mod description (see template below) | Detail what the mod changes and game version |
+| **URL to Google Drive with a mod** | Direct Google Drive file link | Link to the single `.zip` file from Step A |
+| **URL to mod's page on mod.io** | `https://mod.io/g/stalker2/m/<mod-slug>` | Full mod.io profile URL |
+
+#### Description Field Template:
+```text
+Mod Title: Weird Water Debuff Tweak
+Target Game: S.T.A.L.K.E.R. 2: Heart of Chornobyl
+Target Platform: Xbox Series X|S
+Mod Version: 2.0.0
+mod.io ID: 6393766
+
+Summary:
+Removes heavy visual distortion, blurring, and screen wobble effects applied to the player when equipping the "Weird Water" artifact.
+
+Technical Details:
+- Type: Config patch (ItemPrototypes.cfg bpatch)
+- Dependencies: None (self-contained)
+- Native Code: Zero binaries (.dll, .exe, .asi)
+- Game Update Compatibility: Tested and fully compatible with Update 2.0
+```
+
+### Step C: Mandatory Checkbox Confirmations
+Before submitting, check the required confirmation boxes:
+1. ☑ **Asset References**: *"Confirm that your mod does not contain references to assets that aren't natively included within the mod itself."* (Ensures no dangling or unbundled third-party dependencies).
+2. ☑ **Safety & Guidelines**: *"Confirm that files are clean, safe, and do not contain malicious code or inappropriate content."* (Adheres to GSC Fan Content Guidelines & Microsoft Xbox Content Policies).
+
+### Step D: Submission & Confirmation
+1. Click **Create** (`#create-ticket-submit-btn`).
+2. An automated confirmation email with a Ticket ID (e.g. `#TICKET-12345`) will arrive from `support@stalker2.com`.
+3. Keep this Ticket ID for following up with community managers on the official S.T.A.L.K.E.R. 2 Discord (`#modding` channel) if the review cycle requires escalation.
+
 
 ---
 
