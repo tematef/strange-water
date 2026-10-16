@@ -48,4 +48,6 @@
 
 ### Actions Taken
 - Updated mod.io description via REST API to include explicit Author Permissions & Credits citing `r-skrylnyk` and `TheSilverFoxe` (Nexus #382) to satisfy moderation and copyright guidelines.
+- Generated and uploaded high-resolution 16:9 listing banner (1376x768, 691KB) to replace the dark placeholder logo on mod.io via `POST /media`.
+
 
