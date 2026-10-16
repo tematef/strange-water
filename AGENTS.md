@@ -18,6 +18,7 @@ Input (.7z from Nexus)
   → Rename with _P suffix (Unreal patch precedence)
   → Package as .zip
   → Upload to mod.io REST API (hidden, Xbox Series X platform)
+  → Submit "Cook Mod Request for Xbox" ticket to GSC Help Center (support.stalker2.com)
 ```
 
 ## Key Conventions
@@ -27,6 +28,8 @@ Input (.7z from Nexus)
 - **Game ID**: S.T.A.L.K.E.R. 2 = `5761` on mod.io
 - **Visibility**: Always upload as `visible=0` (hidden) first, publish manually after Xbox testing
 - **Platform header**: Include `X-Modio-Platform: xboxseriesx` on file uploads
+- **GSC Console Approval**: Uploading to mod.io leaves Xbox in `status: 0` (Pending). You MUST submit a "Cook Mod Request for Xbox" ticket via [support.stalker2.com](https://support.stalker2.com) with a direct Google Drive link to the single `.zip` file. See local skill `stalker2-xbox-approval`.
+
 
 ## Console Safety Rules (FATAL)
 
