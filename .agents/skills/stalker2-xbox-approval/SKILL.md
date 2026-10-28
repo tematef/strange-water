@@ -113,7 +113,7 @@ Before submitting, check the required confirmation boxes:
 ### Step D: Submission & Confirmation
 1. Click **Create** (`#create-ticket-submit-btn`).
 2. An automated confirmation email with a Ticket ID (e.g. `#TICKET-12345`) will arrive from `support@stalker2.com`.
-3. Keep this Ticket ID for following up with community managers on the official S.T.A.L.K.E.R. 2 Discord (`#modding` channel) if the review cycle requires escalation.
+3. **Closed Beta Priority Note**: GSC currently prioritizes console mod cooking requests from participants of the **Closed Beta**. If your ticket receives a notice about Closed Beta prioritization, reach out to Community Manager **`Super_PropheT`** on the official S.T.A.L.K.E.R. Discord ([discord.gg/stalker](https://discord.gg/stalker)) with your Ticket ID and mod.io link to request inclusion in the Closed Beta.
 
 
 ---

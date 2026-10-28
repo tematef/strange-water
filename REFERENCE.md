@@ -50,4 +50,10 @@
 - Updated mod.io description via REST API to include explicit Author Permissions & Credits citing `r-skrylnyk` and `TheSilverFoxe` (Nexus #382) to satisfy moderation and copyright guidelines.
 - Generated and uploaded high-resolution 16:9 listing banner (1376x768, 691KB) to replace the dark placeholder logo on mod.io via `POST /media`.
 
+## 2026-10-28: GSC Ticket Response — Closed Beta Requirement
+
+### Findings
+- Received response to GSC Cook Mod Request ticket: GSC is prioritizing console mod cooking/approval for participants of their **Closed Beta**.
+- Instructed to contact GSC Community Manager **`Super_PropheT`** on the official S.T.A.L.K.E.R. Discord (`discord.gg/stalker`) to join the Closed Beta.
+
 
